@@ -28,8 +28,9 @@ const Header = () => {
             Sobre mi
           </button>
         </div>
+        {open && <Menu />}
       </nav>
-      {open && <Menu />}
+      
     </>
   );
 };

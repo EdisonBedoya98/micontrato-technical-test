@@ -1,0 +1,23 @@
+.home__reacticon{
+    margin-top: 1rem;
+}
+.home__title{
+    text-align: center;
+    font-weight: 600;
+    color: #002C1F;
+}
+
+.home__reacticon__img,.home__aboutme{
+    margin-left: auto;
+    margin-right: auto;
+}
+.home__aboutme{
+    margin-top: 2rem;
+    text-align: justify;
+    width: 90%;
+}
+@media (min-width: 768px) { 
+    .home__aboutme{
+        width: 70%;
+    }
+}

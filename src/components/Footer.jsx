@@ -3,9 +3,9 @@ import '@styles/Footer.css';
 
 const Footer = () => {
     return (
-        <nav className='footer'>
+        <footer className='footer'>
         <p className='footer__text'>Todos los derechos reservados ©</p>
-        </nav>
+        </footer>
     );
 }
 

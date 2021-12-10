@@ -1,5 +1,7 @@
 html {
     box-sizing: border-box;
+    
+
 }
 *,
 *:before,
@@ -8,8 +10,8 @@ html {
 }
 body{
     margin: 0;
-    /* background-color: aqua; */
     font-family: 'Barlow', sans-serif;
+    
 }
 img {
     max-width: 100%;
@@ -19,12 +21,14 @@ img {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4rem;
+    
 }
 @media (min-width: 768px) { 
 
     .layout{
         width: 90%;
-        max-width: 60rem;
+        max-width: 50rem;
     }
 }
     
