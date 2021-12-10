@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    /* background-color: aqua; */
+    font-family: 'Barlow', sans-serif;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.layout{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) { 
+
+    .layout{
+        width: 90%;
+        max-width: 60rem;
+    }
+}
+    
