@@ -1,0 +1,13 @@
+.list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 768px) { 
+    .list{
+      flex-direction: row;       
+     
+    }
+}

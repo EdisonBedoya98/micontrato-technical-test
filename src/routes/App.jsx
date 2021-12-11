@@ -15,6 +15,8 @@ import Home from '@pages/Home';
 // import useInitialState from '@hooks/useInitialState';
 import '@styles/global.css';
 import '@styles/normalize.css';
+import Users from '@pages/Users';
+import Questions from '../pages/Questions';
 
 
 const App = () => {
@@ -25,9 +27,9 @@ const App = () => {
 			<Layout>
 				<Routes>
 					<Route exact path="/" element={<Home/>} />
-					{/* <Route exact path="/login" element={<Login/>} />
-					<Route exact path="/password-recovery" element={<PasswordRecovery/>} />
-					<Route exact path="/send-email" element={<SendEmail/>} />
+					 <Route exact path="/users" element={<Users/>} />
+					<Route exact path="/questions" element={<Questions/>} />
+					{/*<Route exact path="/send-email" element={<SendEmail/>} />
 					<Route exact path="/new-password" element={<NewPassword/>} />
 					<Route exact path="/account" element={<MyAccount/>} />
 					<Route exact path="/signup" element={<CreateAccount/>} />
