@@ -1,14 +1,14 @@
 import axios from "axios";
 import { LOADING, ERROR, GET_USERS, SET_PAGES_NUMBER } from "@types/usersTypes";
 
-export const getUsers = () => async (dispatch) => {
+export const getUsers = (page) => async (dispatch) => {
   dispatch({
     type: LOADING,
   });
 
   try {
     const { data: response } = await axios.get(
-      "https://reqres.in/api/users?page=2"
+      `https://reqres.in/api/users?page=${page}`
     );
 
     dispatch({

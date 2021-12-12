@@ -1,27 +1,33 @@
-import React, { useEffect } from "react";
-import "@styles/Users.css";
+import React from "react";
 
 import * as usersActions from "@actions/usersActions";
 import Pagination from "@components/Pagination";
 import { connect } from "react-redux";
 import UserList from "@components/UserList";
+import Spinner from "@components/Spinner";
+import { useNavigate } from "react-router-dom";
 
 const Users = (props) => {
-  const title = "< Usuarios />";
-  console.log(props);
 
-  useEffect(() => {
-    if (!props.users.length) {
-      props.getUsers();
+  const title = "< Usuarios />";
+  const navigate = useNavigate();
+  const putContent = () => {
+    if (props.loading) {
+      return <Spinner />;
     }
-  }, []);
+    if (props.error) {
+      return navigate("/error");
+    }
+
+    return <UserList />;
+  };
 
   return (
     <>
       <h1 className="home__title"> {title}</h1>
-      <UserList />
-
       <Pagination />
+    
+      {putContent()}
     </>
   );
 };

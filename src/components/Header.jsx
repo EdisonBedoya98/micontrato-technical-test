@@ -11,7 +11,6 @@ const Header = () => {
 
   const handleClick = () => {
     setOpen(!open);
-    console.log("clic");
   };
   return (
     <>
@@ -35,7 +34,7 @@ const Header = () => {
           </button>
           </Link>
         </div>
-        {open && <Menu />}
+        {open && <Menu setOpen={setOpen}/>}
       </nav>
       
     </>

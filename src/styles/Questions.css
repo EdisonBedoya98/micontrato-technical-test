@@ -1,0 +1,12 @@
+.question__title {
+  margin: 0;
+}
+.questions {
+  width: 90%;
+  max-width: 40rem;
+  text-align: justify;
+}
+
+.questions__title {
+  font-weight: 600;
+}

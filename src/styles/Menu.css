@@ -1,19 +1,11 @@
 .menu {
   position: absolute;
-  top: 5rem; 
+  top: 5rem;
   width: 100%;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /*margin-left: auto;
-    margin-right: auto; */
   text-align: center;
-  /* padding: 0; */
-  border: 1px solid rgb(32 194 128 / .3);
-  background-color: rgb(32 194 128 );
-
-
-  
-
+  border: 1px solid rgb(32 194 128 / 0.3);
+  background-color: rgb(32 194 128);
+  z-index: 99;
 }
 @media (min-width: 768px) {
   .menu {
@@ -27,6 +19,10 @@
   font-weight: 600;
   padding: 0;
   margin: 0;
+}
+.menu__ul a {
+  text-decoration: none;
+  color: #000;
 }
 .menu__ul__li {
   padding: 0.8rem 0;
