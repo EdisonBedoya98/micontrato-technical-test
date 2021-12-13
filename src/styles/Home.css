@@ -8,6 +8,7 @@
 .home__aboutme {
   text-align: justify;
   width: 90%;
+  line-height:25px
 }
 @media (min-width: 768px) {
   .home__aboutme {

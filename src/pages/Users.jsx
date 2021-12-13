@@ -13,7 +13,7 @@ const Users = (props) => {
   const navigate = useNavigate();
   const putContent = () => {
     if (props.loading) {
-      return <Spinner />;
+      // return <Spinner />;
     }
     if (props.error) {
       return navigate("/error");
