@@ -1,0 +1,17 @@
+.home__title {
+  text-align: center;
+  font-weight: 600;
+  color: #002c1f;
+  margin: 0;
+}
+
+.home__aboutme {
+  text-align: justify;
+  width: 90%;
+  line-height:25px
+}
+@media (min-width: 768px) {
+  .home__aboutme {
+    width: 70%;
+  }
+}

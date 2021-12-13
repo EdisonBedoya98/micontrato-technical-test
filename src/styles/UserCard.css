@@ -1,0 +1,16 @@
+.usercard {
+  padding: 2rem;
+  width: 15rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  display: flex;
+  row-gap: 0.3rem;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.usercard__avatar {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
