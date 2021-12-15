@@ -4,7 +4,7 @@
   "description": "web application for technical test MiContrato using File Type First architecture",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "test",
     "start": "webpack serve --open",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
@@ -27,8 +27,11 @@
     "@babel/preset-react": "^7.16.0",
     "axios": "^0.24.0",
     "babel-loader": "^8.2.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest-fetch-mock": "^3.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -42,11 +45,22 @@
   "devDependencies": {
     "css-loader": "^6.5.1",
     "gh-pages": "^3.2.3",
+    "jest": "^27.4.5",
     "mini-css-extract-plugin": "^2.4.5",
     "style-loader": "^3.3.1"
   },
   "bugs": {
     "url": "https://github.com/EdisonBedoya98/micontrato-technical-test/issues"
   },
-  "homepage": "https://EdisonBedoya98.github.io/micontrato-technical-test"
+  "homepage": "https://EdisonBedoya98.github.io/micontrato-technical-test",
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
+    },
+    "testEnvironment": "jsdom"
+  }
 }

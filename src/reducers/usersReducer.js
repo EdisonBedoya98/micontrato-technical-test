@@ -1,4 +1,4 @@
-import { LOADING, ERROR, GET_USERS,SET_PAGES_NUMBER } from "@types/usersTypes";
+import { LOADING, ERROR, GET_USERS,SET_PAGES_NUMBER } from "../types/usersTypes";
 
 const INITIAL_STATE = {
   users: [],
